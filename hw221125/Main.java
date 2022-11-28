@@ -112,7 +112,7 @@ public class Main {
     }
 
     //   best t O(1)
-    //   worst t O(n) ~ O(~5*n)
+    //   worst t O(n) ~ O((n-1)/1+1 + ((n-1)/2+1 + ((n-1)/3+1 + ... + ((n-1)/n+1)
     void method3(int n) {
         for (int i = 1; i <= n; i++) {
             for (int j = 1; j <= n; j = j + i) {
@@ -121,13 +121,6 @@ public class Main {
         }
     }
 
-    public static void main(String[] args) throws Exception {
-        int[] arr = {0, 0, 1, 1, 2, 2, 3, 3, 3, 3, 5, 5, 5};
-        System.out.println(searchOnceElement(arr));
-        int a = -1;
-        int b = -2;
-
-        System.out.println(a - b);
-
+    public static void main(String[] args) {
     }
 }
