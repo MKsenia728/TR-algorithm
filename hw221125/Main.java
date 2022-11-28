@@ -4,7 +4,7 @@ public class Main {
 
     //    1) Вычислить сложность следующих алгоритмов
 
-    //    t O(n) ~ O(n+1)
+    //    t O(n)
     //    s O(1)
     void test1(int n) {
         if (n == 1)
